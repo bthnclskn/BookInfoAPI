@@ -26,25 +26,9 @@ Clone the repository and install the necessary dependencies:
 ```sh
 git clone https://github.com/yourusername/BookInfoAPI.git
 cd BookInfoAPI
-Installing Dependencies
-In the project root directory, run the following command to install dependencies:
-
-sh
-Kodu kopyala
 dotnet restore
-Creating the Database
-Use EF Core Migrations to create the database:
-
-sh
-Kodu kopyala
 dotnet ef migrations add InitialCreate
 dotnet ef database update
-Running the Project
-To run the project, use the following command:
-
-sh
-Kodu kopyala
-dotnet run
 Usage
 Once the project is running, the API will be available at the following endpoints:
 
@@ -54,8 +38,6 @@ POST /api/books - Add a new book
 PUT /api/books/{id} - Update an existing book
 DELETE /api/books/{id} - Delete a book
 Similar endpoints are available for authors and categories.
-
-API Endpoints
 Books
 GET /api/books - Retrieves all books.
 GET /api/books/{id} - Retrieves a specific book.
@@ -80,16 +62,7 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 License
 This project is licensed under the MIT License. See the LICENSE file for details.
 
-vbnet
-Kodu kopyala
-
-### 4. Adım: MIT Lisansını Ekleme
-
-#### 4.1 LICENSE Dosyası Oluşturma
-   - Proje kök dizininde `LICENSE` adında yeni bir dosya oluşturun.
-
-#### 4.2 LICENSE Dosyasını Düzenleme
-   - Aşağıdaki MIT lisans metnini `LICENSE` dosyasına yapıştırın. `Your Name` kısmını kendi adınızla değiştirin:
+Bu README dosyasını projenizin kök dizinine `README.md` adıyla kaydedin. MIT lisansını eklemek için de `LICENSE` adlı bir dosya oluşturup aşağıdaki metni ekleyin:
 
 ```text
 MIT License
@@ -113,3 +86,4 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
+
